@@ -472,3 +472,72 @@ footer a{text-decoration:none;transition:transform .2s ease}footer a:hover{trans
   .skills-wall{grid-template-columns:1fr;gap:40px;padding-top:75px;padding-bottom:75px}
   .skills-wall .skills-heading h2{font-size:50px}
 }
+
+
+.idea-prompt{
+  margin-top:42px;
+  background:var(--ink);
+  color:var(--paper);
+  border-radius:22px;
+  padding:20px 21px 22px;
+  max-width:520px;
+  box-shadow:0 20px 45px rgba(11,12,16,.13);
+  position:relative;
+  overflow:hidden;
+  transition:transform .3s ease,box-shadow .3s ease;
+}
+.idea-prompt:hover{transform:translateY(-5px) rotate(-.4deg);box-shadow:0 28px 60px rgba(11,12,16,.18)}
+.idea-prompt::after{
+  content:"";
+  position:absolute;
+  width:180px;height:180px;border-radius:50%;
+  right:-85px;bottom:-95px;
+  background:rgba(184,255,74,.1);
+  animation:orb 5s ease-in-out infinite;
+}
+.prompt-top{
+  display:flex;justify-content:space-between;align-items:center;
+  color:#8d9099;font:10px 'DM Mono';letter-spacing:.1em;
+  position:relative;z-index:1;
+}
+.prompt-top i{
+  display:inline-block;width:7px;height:7px;border-radius:50%;
+  background:var(--lime);margin-right:7px;animation:ping 2s infinite;
+}
+.idea-prompt p{
+  font-size:22px;line-height:1.25;letter-spacing:-.04em;
+  margin:30px 0 22px;position:relative;z-index:1;
+}
+.idea-prompt strong{color:var(--lime)}
+.prompt-cursor{
+  color:#aeb0b8;font:11px 'DM Mono';position:relative;z-index:1;
+}
+.prompt-cursor span{color:var(--lime);animation:blink .8s steps(1) infinite}
+
+.idea-marquee{
+  width:100%;
+  overflow:hidden;
+  background:var(--lime);
+  color:var(--ink);
+  transform:rotate(1deg) scale(1.02);
+  margin:0 0 85px;
+  border-top:1px solid var(--ink);
+  border-bottom:1px solid var(--ink);
+}
+.idea-marquee-track{
+  display:flex;
+  width:max-content;
+  align-items:center;
+  gap:25px;
+  padding:17px 0;
+  font:700 12px 'DM Mono';
+  letter-spacing:.12em;
+  animation:ideaMarquee 18s linear infinite;
+}
+.idea-marquee-track b{font-size:14px}
+@keyframes ideaMarquee{to{transform:translateX(-50%)}}
+
+@media(max-width:850px){
+  .idea-prompt{max-width:none}
+  .idea-marquee{margin-bottom:55px}
+}
