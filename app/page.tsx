@@ -154,12 +154,24 @@ export default function Home() {
             <p className="eyebrow">THE IDEA / 03</p>
             <h2>Give me an idea. I&apos;ll figure out how to make it real.</h2>
             <p className="body">I like the space between an idea and a finished product: figuring out what matters, choosing a practical stack, building the first version and learning from what breaks.</p>
+            <div className="idea-prompt">
+              <div className="prompt-top"><span><i /> IDEA LAB</span><span>001</span></div>
+              <p>What if your idea could be <strong>clickable by tonight?</strong></p>
+              <div className="prompt-cursor">→ define → build → test → ship<span>_</span></div>
+            </div>
           </div>
           <div className="principles">
             <div className="principle"><span>01</span><h3>Useful over flashy.</h3><p>Start with the user problem, not the feature list.</p></div>
             <div className="principle"><span>02</span><h3>AI as leverage.</h3><p>Use AI for speed, exploration and debugging — keep the decisions human.</p></div>
             <div className="principle"><span>03</span><h3>Build before perfect.</h3><p>Make a real version early enough that reality can disagree with the idea.</p></div>
             <div className="principle"><span>04</span><h3>Document the lesson.</h3><p>Every useful build should make the next build easier.</p></div>
+          </div>
+        </section>
+
+        <section className="idea-marquee" aria-label="build philosophy">
+          <div className="idea-marquee-track">
+            <span>IDEA</span><b>✦</b><span>PROTOTYPE</span><b>✦</b><span>BUILD</span><b>✦</b><span>BREAK IT</span><b>✦</b><span>FIX IT</span><b>✦</b><span>SHIP IT</span><b>✦</b>
+            <span>IDEA</span><b>✦</b><span>PROTOTYPE</span><b>✦</b><span>BUILD</span><b>✦</b><span>BREAK IT</span><b>✦</b><span>FIX IT</span><b>✦</b><span>SHIP IT</span><b>✦</b>
           </div>
         </section>
 
