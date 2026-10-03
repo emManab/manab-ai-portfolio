@@ -175,7 +175,7 @@ main{width:100%;margin:0;padding:0}
   overflow:hidden;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
   background:var(--ink);color:var(--paper);transform:rotate(-1.2deg) scale(1.02);
 }
-.ticker>div{
+.ticker-track{
   display:flex;width:max-content;align-items:center;gap:28px;
   padding:15px 0;font:11px 'DM Mono';letter-spacing:.1em;animation:marquee 24s linear infinite;
 }
@@ -399,7 +399,7 @@ footer a{text-decoration:none;transition:transform .2s ease}footer a:hover{trans
   .explorer-body{padding:25px}.explorer-body h3{font-size:40px}.tabs{overflow-x:auto}
   .tabs button{white-space:nowrap}.contact{margin:50px 0}.contact>div:last-child{flex-wrap:wrap}
   .skills-wall{padding-left:24px;padding-right:24px}.hero,.section,.signal-strip,.now-band{padding-left:24px;padding-right:24px}.manifesto{padding-top:75px;padding-bottom:75px}.manifesto h2{font-size:66px}
-  .manifesto-mark{top:75px}.ticker>div{gap:20px}
+  .manifesto-mark{top:75px}.ticker-track{gap:20px}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
@@ -414,11 +414,23 @@ footer a{text-decoration:none;transition:transform .2s ease}footer a:hover{trans
 .signal-strip>div{
   padding:26px 30px 28px 0;
   border-right:1px solid var(--line);
-  transition:transform .3s ease,padding-left .3s ease,background .3s ease;
+  transition:transform .3s ease,padding-left .3s ease;
+  position:relative;
 }
 .signal-strip>div+div{padding-left:30px}
 .signal-strip>div:last-child{border-right:0}
-.signal-strip>div:hover{transform:translateY(-5px);background:rgba(255,255,255,.35)}
+.signal-strip>div::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-1px;
+  width:0;
+  height:2px;
+  background:var(--blue);
+  transition:width .35s ease;
+}
+.signal-strip>div:hover{transform:translateY(-5px)}
+.signal-strip>div:hover::after{width:72px}
 .signal-strip span{display:block;font:10px 'DM Mono';color:#4f59bf;margin-bottom:18px}
 .signal-strip b{font-size:17px;letter-spacing:.04em}
 .signal-strip p{color:var(--muted);font-size:12px;line-height:1.6;margin:8px 0 0;max-width:280px}
@@ -540,4 +552,82 @@ footer a{text-decoration:none;transition:transform .2s ease}footer a:hover{trans
 @media(max-width:850px){
   .idea-prompt{max-width:none}
   .idea-marquee{margin-bottom:55px}
+}
+
+
+.build-radar{
+  width:min(1440px,100%);
+  margin:25px auto 0;
+  padding:42px clamp(28px,6vw,92px) 75px;
+  background:var(--paper);
+}
+.radar-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid var(--line);
+  padding-bottom:18px;
+}
+.radar-signal{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font:10px 'DM Mono';
+  letter-spacing:.08em;
+  color:#5d615d;
+}
+.radar-signal i{
+  width:7px;height:7px;border-radius:50%;background:var(--lime);
+  animation:ping 2s infinite;
+}
+.radar-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+}
+.radar-grid article{
+  min-height:235px;
+  padding:28px 28px 24px 0;
+  border-right:1px solid var(--line);
+  position:relative;
+  transition:transform .3s ease;
+}
+.radar-grid article+article{padding-left:28px}
+.radar-grid article:last-child{border-right:0}
+.radar-grid article:hover{transform:translateY(-7px)}
+.radar-grid article>span{font:10px 'DM Mono';color:#4f59bf}
+.radar-grid h3{
+  font-size:27px;
+  letter-spacing:-.055em;
+  margin:42px 0 9px;
+}
+.radar-grid p{
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.7;
+  max-width:300px;
+}
+.radar-line{
+  height:2px;
+  background:var(--line);
+  margin-top:26px;
+  overflow:hidden;
+}
+.radar-line i{
+  display:block;
+  width:35%;
+  height:100%;
+  background:linear-gradient(90deg,var(--blue),var(--lime));
+  animation:radarScan 3.5s ease-in-out infinite;
+}
+.radar-grid article:nth-child(2) .radar-line i{animation-delay:.7s;width:55%}
+.radar-grid article:nth-child(3) .radar-line i{animation-delay:1.4s;width:75%}
+@keyframes radarScan{
+  0%,100%{transform:translateX(-110%)}
+  50%{transform:translateX(230%)}
+}
+@media(max-width:850px){
+  .radar-grid{grid-template-columns:1fr}
+  .radar-grid article,.radar-grid article+article{padding:24px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .radar-grid article:last-child{border-bottom:0}
+  .radar-head{align-items:flex-start;gap:15px;flex-direction:column}
 }
