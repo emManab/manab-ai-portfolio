@@ -539,15 +539,21 @@ footer a{text-decoration:none;transition:transform .2s ease}footer a:hover{trans
 .idea-marquee-track{
   display:flex;
   width:max-content;
+  min-width:max-content;
   align-items:center;
   gap:25px;
   padding:17px 0;
   font:700 12px 'DM Mono';
   letter-spacing:.12em;
-  animation:ideaMarquee 18s linear infinite;
+  animation:ideaMarquee 20s linear infinite;
+  will-change:transform;
 }
-.idea-marquee-track b{font-size:14px}
-@keyframes ideaMarquee{to{transform:translateX(-50%)}}
+.idea-marquee-track b{font-size:14px;flex:0 0 auto}
+.idea-marquee-track span{flex:0 0 auto}
+@keyframes ideaMarquee{
+  from{transform:translate3d(0,0,0)}
+  to{transform:translate3d(-50%,0,0)}
+}
 
 @media(max-width:850px){
   .idea-prompt{max-width:none}
