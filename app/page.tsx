@@ -188,8 +188,12 @@ export default function Home() {
 
         <section className="idea-marquee" aria-label="build philosophy">
           <div className="idea-marquee-track">
-            <span>IDEA</span><b>✦</b><span>PROTOTYPE</span><b>✦</b><span>BUILD</span><b>✦</b><span>BREAK IT</span><b>✦</b><span>FIX IT</span><b>✦</b><span>SHIP IT</span><b>✦</b>
-            <span>IDEA</span><b>✦</b><span>PROTOTYPE</span><b>✦</b><span>BUILD</span><b>✦</b><span>BREAK IT</span><b>✦</b><span>FIX IT</span><b>✦</b><span>SHIP IT</span><b>✦</b>
+            <div className="idea-marquee-group">
+              <span>IDEA</span><b>✦</b><span>PROTOTYPE</span><b>✦</b><span>BUILD</span><b>✦</b><span>BREAK IT</span><b>✦</b><span>FIX IT</span><b>✦</b><span>SHIP IT</span><b>✦</b>
+            </div>
+            <div className="idea-marquee-group" aria-hidden="true">
+              <span>IDEA</span><b>✦</b><span>PROTOTYPE</span><b>✦</b><span>BUILD</span><b>✦</b><span>BREAK IT</span><b>✦</b><span>FIX IT</span><b>✦</b><span>SHIP IT</span><b>✦</b>
+            </div>
           </div>
         </section>
 
