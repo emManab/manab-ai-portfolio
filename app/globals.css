@@ -539,17 +539,22 @@ footer a{text-decoration:none;transition:transform .2s ease}footer a:hover{trans
 .idea-marquee-track{
   display:flex;
   width:max-content;
-  min-width:max-content;
+  align-items:center;
+  will-change:transform;
+  animation:ideaMarquee 18s linear infinite;
+}
+.idea-marquee-group{
+  display:flex;
+  flex:0 0 auto;
   align-items:center;
   gap:25px;
-  padding:17px 0;
+  padding:17px 25px 17px 0;
   font:700 12px 'DM Mono';
   letter-spacing:.12em;
-  animation:ideaMarquee 20s linear infinite;
-  will-change:transform;
+  white-space:nowrap;
 }
-.idea-marquee-track b{font-size:14px;flex:0 0 auto}
-.idea-marquee-track span{flex:0 0 auto}
+.idea-marquee-group span,.idea-marquee-group b{flex:0 0 auto}
+.idea-marquee-group b{font-size:14px}
 @keyframes ideaMarquee{
   from{transform:translate3d(0,0,0)}
   to{transform:translate3d(-50%,0,0)}
