@@ -117,7 +117,7 @@ export default function Home() {
           <div className="reminder"><span className="calendar">FRI · 7:00 PM</span><h3>Add the next shipped case.</h3><p>A recurring reminder keeps the portfolio connected to actual work instead of becoming a once-a-year redesign project.</p><div className="reminder-line"><span>✓</span> Problem is clear</div><div className="reminder-line"><span>✓</span> Work is named</div><div className="reminder-line"><span>✓</span> Result is documented</div></div>
         </section>
 
-        <section id="contact" className="contact"><p className="eyebrow">LET&apos;S BUILD</p><h2>Have a problem worth turning into a product?</h2><p>I&apos;m interested in product engineering, AI-assisted development and practical software.</p><div><a className="button light" href="mailto:hello@example.com">Email me ↗</a><a className="button outline" href="https://github.com/emManab" target="_blank">GitHub ↗</a></div></section>
+        <section id="contact" className="contact"><p className="eyebrow">LET&apos;S BUILD</p><h2>Have a problem worth turning into a product?</h2><p>I&apos;m interested in product engineering, AI-assisted development and practical software.</p><div><a className="button light" href="https://github.com/emManab" target="_blank">Connect on GitHub ↗</a><a className="button outline" href="https://github.com/emManab" target="_blank">GitHub ↗</a></div></section>
       </main>
 
       <footer><span>© 2026 Manab Barman</span><span>AI Fluency Capstone · Built with Next.js</span><a href="#">&uarr; Back to top</a></footer>
