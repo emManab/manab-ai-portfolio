@@ -96,13 +96,16 @@ export default function Home() {
             <div className="proof-row"><span>03 selected builds</span><span>•</span><span>Flutter · Firebase · AI</span><span>•</span><span>Idea → build → reality</span></div>
           </div>
 
-          <div className="hero-panel">
-            <div className="panel-glow" />
-            <div className="panel-top"><span>THE BUILD LOOP</span><span className="dot" /></div>
-            <div className="panel-title">Think it.<br/><strong>Make it.</strong><br/>Test it.</div>
-            <div className="signal"><span>01</span><div><b>IDEA</b><small>Find the useful problem.</small></div></div>
-            <div className="signal"><span>02</span><div><b>BUILD</b><small>Make the smallest real version.</small></div></div>
-            <div className="signal"><span>03</span><div><b>PROVE</b><small>Test it, learn from it, improve it.</small></div></div>
+          <div className="hero-visual">
+            <div className="visual-orbit orbit-a" />
+            <div className="visual-orbit orbit-b" />
+            <div className="visual-core"><span>01</span><strong>IDEA</strong><small>→ REAL THING</small></div>
+            <div className="visual-node node-idea"><span>01</span><b>THINK</b><small>problem</small></div>
+            <div className="visual-node node-build"><span>02</span><b>BUILD</b><small>prototype</small></div>
+            <div className="visual-node node-test"><span>03</span><b>TEST</b><small>feedback</small></div>
+            <div className="visual-node node-ship"><span>04</span><b>SHIP</b><small>learn</small></div>
+            <div className="visual-status"><i /> BUILD LOOP <span>RUNNING</span></div>
+            <div className="visual-stamp">MAKE<br/>IT<br/><em>REAL.</em></div>
           </div>
         </section>
 
