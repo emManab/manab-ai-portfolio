@@ -107,7 +107,10 @@ export default function Home() {
         </section>
 
         <section className="ticker" aria-label="skills">
-          <div><span>PRODUCT THINKING</span><b>✦</b><span>FLUTTER</span><b>✦</b><span>FIREBASE</span><b>✦</b><span>AI-ASSISTED DEVELOPMENT</span><b>✦</b><span>PROTOTYPING</span><b>✦</b><span>PRODUCT UX</span><b>✦</b></div>
+          <div className="ticker-track">
+            <span>PRODUCT THINKING</span><b>✦</b><span>FLUTTER</span><b>✦</b><span>FIREBASE</span><b>✦</b><span>AI-ASSISTED DEVELOPMENT</span><b>✦</b><span>PROTOTYPING</span><b>✦</b><span>PRODUCT UX</span><b>✦</b>
+            <span>PRODUCT THINKING</span><b>✦</b><span>FLUTTER</span><b>✦</b><span>FIREBASE</span><b>✦</b><span>AI-ASSISTED DEVELOPMENT</span><b>✦</b><span>PROTOTYPING</span><b>✦</b><span>PRODUCT UX</span><b>✦</b>
+          </div>
         </section>
 
         <section className="signal-strip">
@@ -120,6 +123,18 @@ export default function Home() {
           <div className="now-label"><span className="live-dot" /> CURRENTLY</div>
           <div className="now-copy"><strong>Building at the intersection of</strong> <em>AI × product × mobile.</em></div>
           <div className="now-tags"><span>Flutter</span><span>Firebase</span><span>AI APIs</span><span>UX</span></div>
+        </section>
+
+        <section className="build-radar">
+          <div className="radar-head">
+            <p className="eyebrow">BUILD RADAR / LIVE</p>
+            <span className="radar-signal"><i /> SYSTEM ONLINE</span>
+          </div>
+          <div className="radar-grid">
+            <article><span>01</span><h3>Make ideas tangible.</h3><p>Start with something people can see, tap and react to.</p><div className="radar-line"><i /></div></article>
+            <article><span>02</span><h3>Keep AI useful.</h3><p>Use AI where it creates leverage, not noise.</p><div className="radar-line"><i /></div></article>
+            <article><span>03</span><h3>Ship the lesson.</h3><p>Every build should leave the next build a little smarter.</p><div className="radar-line"><i /></div></article>
+          </div>
         </section>
 
         <section id="work" className="section">
