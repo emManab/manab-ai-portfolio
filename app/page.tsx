@@ -110,6 +110,18 @@ export default function Home() {
           <div><span>PRODUCT THINKING</span><b>✦</b><span>FLUTTER</span><b>✦</b><span>FIREBASE</span><b>✦</b><span>AI-ASSISTED DEVELOPMENT</span><b>✦</b><span>PROTOTYPING</span><b>✦</b><span>PRODUCT UX</span><b>✦</b></div>
         </section>
 
+        <section className="signal-strip">
+          <div><span>01</span><b>BUILD</b><p>Turn an idea into something you can actually click.</p></div>
+          <div><span>02</span><b>CONNECT</b><p>Flutter + Firebase + APIs where they make sense.</p></div>
+          <div><span>03</span><b>ITERATE</b><p>Ship a version, learn from it, then make the next one sharper.</p></div>
+        </section>
+
+        <section className="now-band">
+          <div className="now-label"><span className="live-dot" /> CURRENTLY</div>
+          <div className="now-copy"><strong>Building at the intersection of</strong> <em>AI × product × mobile.</em></div>
+          <div className="now-tags"><span>Flutter</span><span>Firebase</span><span>AI APIs</span><span>UX</span></div>
+        </section>
+
         <section id="work" className="section">
           <div className="section-head"><div><p className="eyebrow">SELECTED WORK / 01</p><h2>Ideas that became things.</h2></div><p>I don&apos;t want a portfolio that only says what I know. I want it to show what I can make. Each case starts with a reason to exist.</p></div>
           <div className="project-grid">
@@ -171,12 +183,24 @@ export default function Home() {
           <div className="rule-row"><span>04</span><b>Ship the lesson.</b><p>The output is the product — and the learning that makes the next one better.</p></div>
         </section>
 
+        <section className="skills-wall">
+          <div className="skills-heading"><p className="eyebrow">THE TOOLKIT / 06</p><h2>Things I like<br/><em>making with.</em></h2></div>
+          <div className="skills-list">
+            <div><span>01</span><b>Flutter</b><small>Mobile products</small></div>
+            <div><span>02</span><b>Firebase</b><small>Backend + data</small></div>
+            <div><span>03</span><b>AI / LLMs</b><small>Useful intelligence</small></div>
+            <div><span>04</span><b>Product UX</b><small>Flows that make sense</small></div>
+            <div><span>05</span><b>Prototyping</b><small>Idea → interaction</small></div>
+            <div><span>06</span><b>AI-assisted dev</b><small>Faster iteration</small></div>
+          </div>
+        </section>
+
         <section id="next" className="section next">
-          <div className="next-main"><p className="eyebrow">WHAT&apos;S NEXT / 06</p><h2>The next idea already has a place.</h2><p>When LibTrack moves from concept toward a real end-to-end booking flow, I&apos;ll add it here using the same three beats: problem → what I did → what came of it.</p><a className="button dark" href="#work">See the case structure ↑</a></div>
+          <div className="next-main"><p className="eyebrow">WHAT&apos;S NEXT / 07</p><h2>The next idea already has a place.</h2><p>When LibTrack moves from concept toward a real end-to-end booking flow, I&apos;ll add it here using the same three beats: problem → what I did → what came of it.</p><a className="button dark" href="#work">See the case structure ↑</a></div>
           <div className="reminder"><span className="calendar">NEXT BUILD</span><h3>Make the next thing real.</h3><p>A portfolio should change because the work changes — not because the homepage gets redesigned again.</p><div className="reminder-line"><span>✓</span> Problem is clear</div><div className="reminder-line"><span>✓</span> Work is named</div><div className="reminder-line"><span>✓</span> Result is documented</div></div>
         </section>
 
-        <section id="contact" className="contact"><div className="contact-orbit" /><p className="eyebrow">LET&apos;S BUILD / 07</p><h2>Have an idea that should become a real thing?</h2><p>I&apos;m interested in product engineering, AI-assisted development and practical software.</p><div><a className="button light" href="https://github.com/emManab" target="_blank" rel="noreferrer">Connect on GitHub ↗</a><a className="button outline" href="https://github.com/emManab" target="_blank" rel="noreferrer">GitHub ↗</a></div></section>
+        <section id="contact" className="contact"><div className="contact-orbit" /><p className="eyebrow">LET&apos;S BUILD / 08</p><h2>Have an idea that should become a real thing?</h2><p>I&apos;m interested in product engineering, AI-assisted development and practical software.</p><div><a className="button light" href="https://github.com/emManab" target="_blank" rel="noreferrer">Connect on GitHub ↗</a><a className="button outline" href="https://github.com/emManab" target="_blank" rel="noreferrer">GitHub ↗</a></div></section>
       </main>
 
       <footer><span>© 2026 Manab Barman</span><span>AI Fluency Capstone · Built with Next.js</span><a href="#">&uarr; Back to top</a></footer>
