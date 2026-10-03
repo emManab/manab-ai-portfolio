@@ -1,22 +1,44 @@
 # Manab AI Portfolio
 
-A polished, responsive portfolio built for the FlyRank AI Fluency Week 10 capstone.
+A Next.js portfolio built for the FlyRank AI Fluency Week 10 capstone.
 
-## What is included
+## Included
 
-- Selected project case studies
+- Responsive portfolio landing page
+- Three project case studies: LibTrack, Swapino and Vishrya
 - Interactive project case explorer
 - Honest AI-assisted build story
-- Problem → What I did → What came of it structure
-- Next-case workflow and concrete reminder plan
-- GitHub Pages deployment workflow
+- Problem → What I did → What came of it case structure
+- Concrete next-case workflow
+- GitHub Pages static deployment configuration
 
-## Projects
+## Stack
 
-- LibTrack — library seat booking concept
-- Swapino — skill swapping concept
-- Vishrya / AI Assistant — AI assistant project
+- Next.js 16
+- React 19
+- TypeScript
+- CSS
+- GitHub Pages
 
-## Local preview
+## Run locally
 
-Open `index.html` in a browser, or serve the folder with any static web server.
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:3000.
+
+## Production build
+
+```bash
+npm run build
+```
+
+The static output is generated in `out/`.
+
+## Deployment
+
+The GitHub Actions workflow in `.github/workflows/pages.yml` builds the static export and deploys it to GitHub Pages.
+
+Repository: https://github.com/emManab/manab-ai-portfolio
