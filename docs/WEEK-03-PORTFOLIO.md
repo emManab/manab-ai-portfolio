@@ -35,6 +35,8 @@ Every project follows:
 
 ## Identity kit
 
+See the dedicated one-page artifact: [docs/IDENTITY-KIT.md](IDENTITY-KIT.md).
+
 ### Typography
 - Headlines / interface: **Manrope**
 - Metadata / technical labels: **DM Mono**
@@ -43,9 +45,9 @@ Every project follows:
 - Paper: **#F8F5ED**
 - Ink: **#0B0C10**
 - Blue: **#5D72FF**
-- Lime: **#B8FF4A**
+- Near-black text: **#17181C**
 
-Paper + ink form the foundation. Blue is for interaction/navigation; lime is reserved for emphasis/status.
+Paper + ink form the foundation. Electric blue is the single accent for interaction, navigation and emphasis.
 
 ### Shape, layout and motion
 - Reading width: approximately 1180px
