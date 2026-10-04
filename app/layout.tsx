@@ -3,7 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Manab Barman — Product & AI Portfolio",
-  description: "A working portfolio of products, experiments, and an honest AI-assisted build story.",
+  description: "I build useful things with AI — turning rough ideas into working products.",
+  icons: { icon: "/icon.svg" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
