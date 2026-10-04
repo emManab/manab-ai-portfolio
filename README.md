@@ -42,3 +42,17 @@ The static output is generated in `out/`.
 The GitHub Actions workflow in `.github/workflows/pages.yml` builds the static export and deploys it to GitHub Pages.
 
 Repository: https://github.com/emManab/manab-ai-portfolio
+
+
+## Week 3 — Portfolio identity
+
+The repository now includes the visual/content system prepared for the FlyRank AI Fluency Week 3 assignment.
+
+- One-line claim: **I build useful things with AI — turning rough ideas into working products.**
+- Content map for the homepage and case-study structure
+- Identity kit with Manrope + DM Mono and a four-color system
+- MANAB. wordmark + MB browser icon
+- Image curation rules prioritizing real project evidence
+- Rejected-image rationale
+
+See [docs/WEEK-03-PORTFOLIO.md](docs/WEEK-03-PORTFOLIO.md) for the complete submission artifact.
