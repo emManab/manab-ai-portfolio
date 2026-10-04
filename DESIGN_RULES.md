@@ -4,9 +4,9 @@ This document is the visual and content contract for Manab's portfolio. Future c
 
 ## 1. Visual direction
 
-- Mood: premium, experimental, practical, confident.
+- Mood: clean, technical, calm, and confident — the visual system frames the projects without competing with the work.
 - Primary theme: warm paper + near-black ink.
-- Accent system: electric blue for interaction, acid lime for emphasis, violet for secondary surfaces.
+- Accent system: electric blue only.
 - Typography: Manrope for interface/headlines; DM Mono for labels, metadata and technical signals.
 - Shape language: rounded cards with controlled radii; avoid excessive pills.
 - Depth: use soft shadows, borders and restrained gradients instead of heavy glassmorphism.
@@ -96,8 +96,8 @@ The portfolio itself should remain a working example of the user's approach: ide
 - Technical metadata font: DM Mono.
 - Paper: #F8F5ED.
 - Ink: #0B0C10.
-- Blue: #5D72FF.
-- Lime: #B8FF4A.
+- Near-black text: #17181C.
+- Blue accent: #5D72FF.
 - Primary wordmark: MANAB.
 - Browser mark: compact MB icon.
 - Real project screenshots take priority over decorative/generated imagery.
@@ -105,3 +105,5 @@ The portfolio itself should remain a working example of the user's approach: ide
 - The design should frame the projects rather than compete with them.
 
 Full Week 3 content map and asset checklist: docs/WEEK-03-PORTFOLIO.md.
+
+Identity Kit: docs/IDENTITY-KIT.md.
