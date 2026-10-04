@@ -13,14 +13,24 @@ These four images are the final keepers for the LibTrack case study. They are re
 
 ## Swapino — real product captures
 
-These four images are real screenshots from the Swapino mobile product. They show the actual product direction across discovery, matching, conversations, and the user profile.
+These four images are real screenshots from the Swapino mobile product.
 
 | Screen | Decision | Why |
 | --- | --- | --- |
-| Home | **REAL** | Shows the actual Swapino home experience and the primary skill-swap discovery action. |
-| Discover | **REAL** | Shows the implemented people-matching experience, match scores, skills, and actions. |
+| Home | **REAL** | Shows the actual Swapino home experience and primary skill-swap action. |
+| Discover | **REAL** | Shows matching, match scores, skills, and discovery actions. |
 | Inbox / Chats | **REAL** | Shows the actual conversation area for requests, chats, and sessions. |
 | Profile | **REAL** | Shows the real profile, teach/learn relationship, skills, rating, swaps, and availability. |
+
+## Vishrya / Veyra AI — real product captures
+
+These three images are real screenshots from the implemented AI assistant app, shown under its current in-app name, **Veyra AI Assistant**.
+
+| Screen | Decision | Why |
+| --- | --- | --- |
+| Home | **REAL** | Shows the actual assistant home, prompt input, featured prompts, and recent conversations. |
+| Chats | **REAL** | Shows the implemented conversation history and filtering experience. |
+| Settings | **REAL** | Shows the real AI-provider configuration, model settings, authentication state, and app information. |
 
 ## Portfolio image rule
 
@@ -49,4 +59,9 @@ It looked polished but generic and did not represent any real product I built. I
 - Inbox / Chats — real capture
 - Profile — real capture
 
-Vishrya will use the same rule: add real captures when available rather than AI stand-ins.
+### Veyra AI Assistant
+- Home — real capture
+- Chats — real capture
+- Settings — real capture
+
+All three projects follow the same rule: real product evidence is preferred over AI-generated stand-ins.
