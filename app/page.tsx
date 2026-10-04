@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 type Project = {
   id: string; number: string; type: string; title: string; summary: string;
   stack: string[]; problem: string; did: string; result: string; next: string;
+  images: string[];
 };
 
 const projects: Project[] = [
@@ -15,7 +16,13 @@ const projects: Project[] = [
     problem:"Students need a quick way to understand seat availability before spending time walking to the library.",
     did:"I designed and built the mobile flow in Flutter, with Firebase as the planned backend layer for live availability and reservation state.",
     result:"A clear product loop: view availability → choose a seat → reserve it. The concept gave me a concrete place to think about real-time state and user friction.",
-    next:"Take the flow through a real end-to-end booking test and document what changes after user feedback."
+    next:"Take the flow through a real end-to-end booking test and document what changes after user feedback.",
+    images:[
+      "/projects/libtrack/home.jpg",
+      "/projects/libtrack/seat-selection.jpg",
+      "/projects/libtrack/payment.jpg",
+      "/projects/libtrack/booking-confirmed.jpg"
+    ]
   },
   {
     id:"swapino", number:"02", type:"Community", title:"Swapino",
@@ -24,7 +31,8 @@ const projects: Project[] = [
     problem:"People can have useful skills without an easy way to find someone who wants to exchange knowledge.",
     did:"I explored profiles, skills and discovery as a lightweight Flutter + Firebase product flow rather than starting with a large social network.",
     result:"A focused direction for peer-to-peer skill exchange, with the matching problem kept small enough to test.",
-    next:"Run a small user test around skill discovery and matching, then simplify the flow based on where people hesitate."
+    next:"Run a small user test around skill discovery and matching, then simplify the flow based on where people hesitate.",
+    images:[]
   },
   {
     id:"vishrya", number:"03", type:"AI", title:"Vishrya",
@@ -33,7 +41,8 @@ const projects: Project[] = [
     problem:"A chat UI is easy to imitate; a useful assistant needs context, persistence and sensible failure states.",
     did:"I built the assistant experience in Flutter with local storage and an LLM API, using AI during development for scaffolding, debugging and implementation ideas.",
     result:"A working direction for an assistant that can retain useful local context instead of behaving like a blank chat box.",
-    next:"Harden API/error states, reduce unnecessary calls and create a small evaluation set for response quality."
+    next:"Harden API/error states, reduce unnecessary calls and create a small evaluation set for response quality.",
+    images:[]
   }
 ];
 
@@ -157,6 +166,12 @@ export default function Home() {
             <div className="tabs">{projects.map(p=><button key={p.id} className={active===p.id?"active":""} onClick={()=>setActive(p.id)}>{p.title}</button>)}</div>
             <div className="explorer-body">
               <div><span className="type">{project.type}</span><h3>{project.title}</h3><p>{project.summary}</p></div>
+              {project.images.length > 0 && <div className="project-screens">
+                <div className="screens-head"><b>REAL PRODUCT CAPTURES</b><span>{project.images.length} screens</span></div>
+                <div className="screens-grid">
+                  {project.images.map((src,i)=><figure key={src}><img src={src} alt={`${project.title} screen ${i+1}`} loading="lazy"/><figcaption>{String(i+1).padStart(2,"0")}</figcaption></figure>)}
+                </div>
+              </div>}
               <div className="case-grid">
                 <div><b>01 / Problem</b><p>{project.problem}</p></div>
                 <div><b>02 / What I did</b><p>{project.did}</p></div>
