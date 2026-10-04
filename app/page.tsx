@@ -45,7 +45,7 @@ const projects: Project[] = [
     images:[
       "/projects/vishrya/home.jpg",
       "/projects/vishrya/chats.jpg",
-      "/projects/vishrya/settings.jpg"
+      "/projects/vishrya/model.jpg"
     ]
   }
 ];
