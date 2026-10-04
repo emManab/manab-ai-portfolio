@@ -87,3 +87,21 @@ The site should always make these easy for a stranger to find:
 - a way to reach the GitHub profile
 
 The portfolio itself should remain a working example of the user's approach: idea -> build -> test -> learn -> document.
+
+
+## 9. Week 3 identity decisions
+
+- Claim: **I build useful things with AI — turning rough ideas into working products.**
+- Headline/interface font: Manrope.
+- Technical metadata font: DM Mono.
+- Paper: #F8F5ED.
+- Ink: #0B0C10.
+- Blue: #5D72FF.
+- Lime: #B8FF4A.
+- Primary wordmark: MANAB.
+- Browser mark: compact MB icon.
+- Real project screenshots take priority over decorative/generated imagery.
+- Generated visuals must never be presented as project evidence.
+- The design should frame the projects rather than compete with them.
+
+Full Week 3 content map and asset checklist: docs/WEEK-03-PORTFOLIO.md.
