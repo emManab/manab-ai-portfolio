@@ -42,7 +42,11 @@ const projects: Project[] = [
     did:"I built the assistant experience in Flutter with local storage and an LLM API, using AI during development for scaffolding, debugging and implementation ideas.",
     result:"A working direction for an assistant that can retain useful local context instead of behaving like a blank chat box.",
     next:"Harden API/error states, reduce unnecessary calls and create a small evaluation set for response quality.",
-    images:[]
+    images:[
+      "/projects/vishrya/home.jpg",
+      "/projects/vishrya/chats.jpg",
+      "/projects/vishrya/settings.jpg"
+    ]
   }
 ];
 
